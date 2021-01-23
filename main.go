@@ -11,7 +11,9 @@ type goods struct{
 
 }
 
+func VitaminsCategory(w http.ResponseWriter, r *http.Request) {
 
+}
 
 func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello world")
@@ -25,10 +27,13 @@ func infoPage(w http.ResponseWriter, r *http.Request) {
 
 }
 
-
-
-func main(){
+func initSite(){
 	http.HandleFunc("/",homePage)
 	http.HandleFunc("/info/",infoPage)
+	http.HandleFunc("/category/vitamins/",VitaminsCategory)
 	http.ListenAndServe(":5000",nil)
+}
+
+func main(){
+	initSite()
 }

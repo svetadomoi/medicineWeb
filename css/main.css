@@ -1,0 +1,32 @@
+body {
+    background: #d6d6d6;
+}
+input::-webkit-input-placeholder {
+    color: #B6C0A5; 
+    font-style: italic; 
+    /*background: #E0EFCA;*/
+  }
+  
+.search_type {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+input {
+    height: 42px;
+    width: 100%;
+}
+button {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background: #B6C0A5;
+}
